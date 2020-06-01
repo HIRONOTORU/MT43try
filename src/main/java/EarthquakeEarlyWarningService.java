@@ -400,9 +400,11 @@ public class EarthquakeEarlyWarningService {
         System.out.printf("{\n");
         System.out.printf("\"%s\":\"%s\",\n","PAB",PAB);
         System.out.printf("\"%s\":\"%d\",\n","MT",MT);
+        System.out.printf("\"%s\":\"%d\",\n","ReportClassificationInt",ReportClassificationInt);
+        /*
         System.out.printf("\"%s\":\"%b\",\n","ReportClassification",ReportClassification);
         System.out.printf("\"%s\":\"%b\",\n","ReportClassificationTrainingTest",ReportClassificationTrainingTest);
-
+        */
         System.out.printf("\"%s\":\"%d\",\n","DisasterCategory",DisasterCategory);
         System.out.printf("\"%s\":\"%02d\",\n","Rt_month",Rt_month);
         System.out.printf("\"%s\":\"%02d\",\n","Rt_day",Rt_day);
