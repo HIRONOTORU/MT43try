@@ -3,13 +3,13 @@ import static java.lang.System.exit;
 
 public class EarthquakeEarlyWarningService {
     public static int mt43try_1_32 = 0x53ADF2C5;
-    public static int mt43try_2_32 = 0x14000510;
-    public static int mt43try_3_32 = 0x0E000000;
-    public static int mt43try_4_32 = 0x00000000;
-    public static int mt43try_5_32 = 0x00000000;
-    public static int mt43try_6_32 = 0x00000000;
-    public static int mt43try_7_32 = 0x00000010;
-    public static int mt43try_8_32 = 0x1E295D4_0;
+    public static int mt43try_2_32 = 0x168002D3;
+    public static int mt43try_3_32 = 0x885A7D8B;
+    public static int mt43try_4_32 = 0x51416BBD;
+    public static int mt43try_5_32 = 0x2D784A07;
+    public static int mt43try_6_32 = 0xE54115A8;
+    public static int mt43try_7_32 = 0x7D500010;
+    public static int mt43try_8_32 = 0xE2B56E0_0;
 
     public static String PAB;
     public static int MT;
@@ -121,9 +121,9 @@ public class EarthquakeEarlyWarningService {
         int forH_5;
         int forMi_6;
 
-        forMo_4 = (0b1111_0000_0000_0000_0000 & input) >> 16;
-        forD_5  = (0b0000_1111_1000_0000_0000 & input) >> 11;
-        forH_5  = (0b0000_0000_0111_1100_0000 & input) >> 6;
+        forMo_4 = (0b1111_0000_0000_0000_0000 & input) >>> 16;
+        forD_5  = (0b0000_1111_1000_0000_0000 & input) >>> 11;
+        forH_5  = (0b0000_0000_0111_1100_0000 & input) >>> 6;
         forMi_6 = (0b0000_0000_0000_0011_1111 & input);
 
         Rt_month = AtMo(forMo_4);
@@ -227,8 +227,8 @@ public class EarthquakeEarlyWarningService {
     }
 
     public static void Ot_16(int input) {
-        Ot_day =  (0b1111_1000_0000_0000 & input) >> 11;
-        Ot_hour =  (0b0000_0111_1100_0000 & input) >> 6;
+        Ot_day =  (0b1111_1000_0000_0000 & input) >>> 11;
+        Ot_hour =  (0b0000_0111_1100_0000 & input) >>> 6;
         Ot_minute = (0b0000_0000_0011_1111 & input);
     }
 
@@ -274,15 +274,15 @@ public class EarthquakeEarlyWarningService {
     }
     /*
     public LatLon_41(long input){
-        LatNs = (0b1000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >> 63;
-        LatD =  (0b0111_1111_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >> 56;
-        LatM =  (0b0000_0000_1111_1100_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >> 50;
-        LatS =  (0b0000_0000_0000_0011_1111_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >> 44;
+        LatNs = (0b1000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >>> 63;
+        LatD =  (0b0111_1111_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >>> 56;
+        LatM =  (0b0000_0000_1111_1100_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >>> 50;
+        LatS =  (0b0000_0000_0000_0011_1111_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >>> 44;
 
-        LonEw = (0b0000_0000_0000_0000_0000_1000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >> 43;
-        LonD =  (0b0000_0000_0000_0000_0000_0111_1111_1000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >> 35;
-        LonM =  (0b0000_0000_0000_0000_0000_0000_0000_0111_1110_0000_0000_0000_0000_0000_0000_0000 & input) >> 29;
-        LonS =  (0b0000_0000_0000_0000_0000_0000_0000_0000_0001_1111_1000_0000_0000_0000_0000_0000 & input) >> 23;
+        LonEw = (0b0000_0000_0000_0000_0000_1000_0000_0000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >>> 43;
+        LonD =  (0b0000_0000_0000_0000_0000_0111_1111_1000_0000_0000_0000_0000_0000_0000_0000_0000 & input) >>> 35;
+        LonM =  (0b0000_0000_0000_0000_0000_0000_0000_0111_1110_0000_0000_0000_0000_0000_0000_0000 & input) >>> 29;
+        LonS =  (0b0000_0000_0000_0000_0000_0000_0000_0000_0001_1111_1000_0000_0000_0000_0000_0000 & input) >>> 23;
 
         return;
     }
@@ -351,39 +351,39 @@ public class EarthquakeEarlyWarningService {
     }
 
     public static void main(String[] args){
-        PAB_8((mt43try_1_32 & 0xff000000) >> 24 );
-        MT_6((mt43try_1_32 & 0x00fc0000) >> 18 );
-        Rc_3((mt43try_1_32 & 0x00038000) >> 15 );
-        Dc_4((mt43try_1_32 & 0x00007800) >> 11);
+        PAB_8((mt43try_1_32 & 0xff000000) >>> 24 );
+        MT_6((mt43try_1_32 & 0x00fc0000) >>> 18 );
+        Rc_3((mt43try_1_32 & 0x00038000) >>> 15 );
+        Dc_4((mt43try_1_32 & 0x00007800) >>> 11);
         int tmp;
-        tmp = (((mt43try_1_32 & 0x000007ff) << 21 ) | ((mt43try_2_32 & 0xff800000) >> 11 ));
-        tmp = tmp >> 12;
+        tmp = (((mt43try_1_32 & 0x000007ff) << 21 ) | ((mt43try_2_32 & 0xff800000) >>> 11 ));
+        tmp = tmp >>> 12;
         At_20(tmp);
-        It_2((mt43try_2_32 & 0x00600000) >> 21);
+        It_2((mt43try_2_32 & 0x00600000) >>> 21);
         /*
-        Spare1_10((mt43try_2_32 & 0x001ff800) >> 11);
-        Co_1_9((mt43try_2_32 & 0x000007fc) >> 2);
-        tmp = (((mt43try_2_32 & 0x00000003) << 30 ) | ((mt43try_3_32 & 0xfe000000) >> 2 ));
-        tmp = tmp >> 23;
+        Spare1_10((mt43try_2_32 & 0x001ff800) >>> 11);
+        Co_1_9((mt43try_2_32 & 0x000007fc) >>> 2);
+        tmp = (((mt43try_2_32 & 0x00000003) << 30 ) | ((mt43try_3_32 & 0xfe000000) >>> 2 ));
+        tmp = tmp >>> 23;
         Co_2_9(tmp);
-        Co_3_9((mt43try_3_32 & 0x01ff0000) >> 16 );
+        Co_3_9((mt43try_3_32 & 0x01ff0000) >>> 16 );
         Ot_16((mt43try_3_32 & 0x0000ffff) );
-        De_9((mt43try_4_32 & 0xff800000) >> 23);
-        Ma_7((mt43try_4_32 & 0x007f0000) >> 16);
-        Ep_10((mt43try_4_32 & 0x0000ffc0) >> 6);
-        L1_4((mt43try_4_32 & 0x0000003c) >> 2);
-        tmp = (((mt43try_4_32 & 0x00000003) << 30 ) | ((mt43try_5_32 & 0xc0000000) >> 2 ));
-        tmp = tmp >> 28;
+        De_9((mt43try_4_32 & 0xff800000) >>> 23);
+        Ma_7((mt43try_4_32 & 0x007f0000) >>> 16);
+        Ep_10((mt43try_4_32 & 0x0000ffc0) >>> 6);
+        L1_4((mt43try_4_32 & 0x0000003c) >>> 2);
+        tmp = (((mt43try_4_32 & 0x00000003) << 30 ) | ((mt43try_5_32 & 0xc0000000) >>> 2 ));
+        tmp = tmp >>> 28;
         U1_4(tmp);
-        tmp = (((mt43try_5_32 & 0x3fffffff) << 2 ) | ((mt43try_6_32 & 0xc0000000) >> 30));
+        tmp = (((mt43try_5_32 & 0x3fffffff) << 2 ) | ((mt43try_6_32 & 0xc0000000) >>> 30));
         int tmp2, tmp3;
-        tmp2 = (((mt43try_6_32 & 0x3fffffff) << 2) | ((mt43try_7_32 & 0xc0000000) >> 30));
-        tmp3 = (((mt43try_7_32 & 0x3fffc000) >> 14 ));
+        tmp2 = (((mt43try_6_32 & 0x3fffffff) << 2) | ((mt43try_7_32 & 0xc0000000) >>> 30));
+        tmp3 = (((mt43try_7_32 & 0x3fffc000) >>> 14 ));
         P1_80_1_80(tmp,tmp2,tmp3);
-        Spare2_4((mt43try_7_32 & 0x00003c00) >> 10);
+        Spare2_4((mt43try_7_32 & 0x00003c00) >>> 10);
         */
 
-        Vn_6((mt43try_7_32 & 0x000003f0) >> 4);
+        Vn_6((mt43try_7_32 & 0x000003f0) >>> 4);
         // mt43try_8_32 not Use.
 
         System.out.println("## input ##");
