@@ -2,14 +2,14 @@
 import static java.lang.System.exit;
 
 public class EarthquakeEarlyWarningService {
-    public static int mt43try_1_32 = 0x53ADF2C5;
-    public static int mt43try_2_32 = 0x168002D3;
-    public static int mt43try_3_32 = 0x885A7D8B;
-    public static int mt43try_4_32 = 0x51416BBD;
-    public static int mt43try_5_32 = 0x2D784A07;
-    public static int mt43try_6_32 = 0xE54115A8;
-    public static int mt43try_7_32 = 0x7D500010;
-    public static int mt43try_8_32 = 0xE2B56E0_0;
+    public static int mt43try_1_32 = 0xC6ADF2C5;
+    public static int mt43try_2_32 = 0x168002C4;
+    public static int mt43try_3_32 = 0x74588FCB;
+    public static int mt43try_4_32 = 0x1F4165DC;
+    public static int mt43try_5_32 = 0x2CC1C599;
+    public static int mt43try_6_32 = 0x00B3E816;
+    public static int mt43try_7_32 = 0x80200010;
+    public static int mt43try_8_32 = 0xA592910_0;
 
     public static String PAB;
     public static int MT;
@@ -25,6 +25,24 @@ public class EarthquakeEarlyWarningService {
     public static int Rt_minute;
     public static boolean Issue;
     public static boolean Cancellation;
+    public static int Spare1_10;
+    public static int WarningCode1;
+    public static int MarineForecastRegion1;
+    public static int WarningCode2;
+    public static int MarineForecastRegion2;
+    public static int WarningCode3;
+    public static int MarineForecastRegion3;
+    public static int WarningCode4;
+    public static int MarineForecastRegion4;
+    public static int WarningCode5;
+    public static int MarineForecastRegion5;
+    public static int WarningCode6;
+    public static int MarineForecastRegion6;
+    public static int WarningCode7;
+    public static int MarineForecastRegion7;
+    public static int WarningCode8;
+    public static int MarineForecastRegion8;
+    public static int Spare2;
     public static int Information1;
     public static int Information2;
     public static int Information3;
@@ -97,7 +115,6 @@ public class EarthquakeEarlyWarningService {
                 ReportClassificationTrainingTest = true;
                 break;
             default:
-                return;
                 // System.out.println("3");
                 // exit(1);
         }
@@ -185,6 +202,151 @@ public class EarthquakeEarlyWarningService {
             System.out.println("10");
             exit(1);
         }
+        Spare1_10 = 0;
+    }
+    public static void Dw_1_5(int input){
+        switch(input){
+            case 0:
+            case 10:
+            case 11:
+            case 12:
+            case 20:
+            case 21:
+            case 22:
+            case 23:
+            case 31:
+            default:
+                WarningCode1 = input;
+        }
+    }
+    public static void P1_1_14(int input){
+        MarineForecastRegion1 = input;
+    }
+    public static void Dw_2_5(int input){
+        switch(input){
+            case 0:
+            case 10:
+            case 11:
+            case 12:
+            case 20:
+            case 21:
+            case 22:
+            case 23:
+            case 31:
+            default:
+                WarningCode2 = input;
+        }
+    }
+    public static void P1_2_14(int input){
+        MarineForecastRegion2 = input;
+    }
+    public static void Dw_3_5(int input){
+        switch(input){
+            case 0:
+            case 10:
+            case 11:
+            case 12:
+            case 20:
+            case 21:
+            case 22:
+            case 23:
+            case 31:
+            default:
+                WarningCode3 = input;
+        }
+    }
+    public static void P1_3_14(int input){
+        MarineForecastRegion3 = input;
+    }
+    public static void Dw_4_5(int input){
+        switch(input){
+            case 0:
+            case 10:
+            case 11:
+            case 12:
+            case 20:
+            case 21:
+            case 22:
+            case 23:
+            case 31:
+            default:
+                WarningCode4 = input;
+        }
+    }
+    public static void P1_4_14(int input){
+        MarineForecastRegion4 = input;
+    }
+    public static void Dw_5_5(int input){
+        switch(input){
+            case 0:
+            case 10:
+            case 11:
+            case 12:
+            case 20:
+            case 21:
+            case 22:
+            case 23:
+            case 31:
+            default:
+                WarningCode5 = input;
+        }
+    }
+    public static void P1_5_14(int input){
+        MarineForecastRegion5 = input;
+    }
+    public static void Dw_6_5(int input){
+        switch(input){
+            case 0:
+            case 10:
+            case 11:
+            case 12:
+            case 20:
+            case 21:
+            case 22:
+            case 23:
+            case 31:
+            default:
+                WarningCode6 = input;
+        }
+    }
+    public static void P1_6_14(int input){
+        MarineForecastRegion6 = input;
+    }
+    public static void Dw_7_5(int input){
+        switch(input){
+            case 0:
+            case 10:
+            case 11:
+            case 12:
+            case 20:
+            case 21:
+            case 22:
+            case 23:
+            case 31:
+            default:
+                WarningCode7 = input;
+        }
+    }
+    public static void P1_7_14(int input){
+        MarineForecastRegion7 = input;
+    }
+    public static void Dw_8_5(int input){
+        switch(input){
+            case 0:
+            case 10:
+            case 11:
+            case 12:
+            case 20:
+            case 21:
+            case 22:
+            case 23:
+            case 31:
+            default:
+                WarningCode8 = input;
+        }
+    }
+    public static void P1_8_14(int input){
+        MarineForecastRegion8 = input;
     }
 
     public static void Co_1_9(int input){
@@ -340,10 +502,19 @@ public class EarthquakeEarlyWarningService {
 
     }
 
+    public static void Spare2_9(int input){
+        if(input != 0){
+            System.out.printf("%x\n",input);
+            System.out.println("15");
+            exit(1);
+        }
+        Spare2 = 0;
+    }
     public static void Spare2_4(int input){
         if(input != 0){
             exit(1);
         }
+        Spare2 = 0;
     }
 
     public static void Vn_6(int input) {
@@ -360,7 +531,38 @@ public class EarthquakeEarlyWarningService {
         tmp = tmp >>> 12;
         At_20(tmp);
         It_2((mt43try_2_32 & 0x00600000) >>> 21);
-        /*
+        // Spare1 10bit mt43try_2_32 & 0x001ff800
+        Dw_1_5((mt43try_2_32 & 0x000007c0) >>> 6 );
+        tmp = (((mt43try_2_32 & 0x0000003f) << 26 ) | ((mt43try_3_32 & 0xff000000) >>> 6 ));
+        tmp = tmp >>> 18;
+        P1_1_14(tmp);
+        Dw_2_5((mt43try_3_32 & 0x00f80000) >>> 19);
+        P1_2_14((mt43try_3_32 & 0x0007ffe0) >>> 5);
+        Dw_3_5((mt43try_3_32 & 0x0000001f));
+        P1_3_14((mt43try_4_32 & 0xfffc0000) >>> 18);
+        Dw_4_5((mt43try_4_32 & 0x0003e000) >>> 13);
+        tmp = (((mt43try_4_32 & 0x00001fff) << 19 ) | ((mt43try_5_32 & 0x80000000) >>> 13 ));
+        tmp = tmp >>> 18;
+        P1_4_14(tmp);
+        Dw_5_5((mt43try_5_32 & 0x7c000000) >>> 26);
+        P1_5_14((mt43try_5_32 & 0x03fff000) >>> 12);
+        Dw_6_5((mt43try_5_32 & 0x00000f80) >>> 7);
+        tmp = (((mt43try_5_32 & 0x0000007f) << 27 ) | ((mt43try_6_32 & 0xfe000000) >>> 7 ));
+        tmp = tmp >>> 18;
+        P1_6_14(tmp);
+        Dw_7_5((mt43try_6_32 & 0x01f00000) >>> 20);
+        P1_7_14((mt43try_6_32 & 0x000fffc0) >>> 6);
+        Dw_8_5((mt43try_6_32 & 0x0000003e) >>> 1);
+        tmp = (((mt43try_6_32 & 0x00000001) << 31 ) | ((mt43try_7_32 & 0xfff80000) >>> 1 ));
+        tmp = tmp >>> 18;
+        P1_8_14(tmp);
+
+        Spare2_9((mt43try_7_32 & 0x0007fc00) >>> 10);
+
+        Vn_6((mt43try_7_32 & 0x0000_03f0) >>> 4);
+        // mt43try_8_32 not Use.
+
+        /* for Dc=1
         Spare1_10((mt43try_2_32 & 0x001ff800) >>> 11);
         Co_1_9((mt43try_2_32 & 0x000007fc) >>> 2);
         tmp = (((mt43try_2_32 & 0x00000003) << 30 ) | ((mt43try_3_32 & 0xfe000000) >>> 2 ));
@@ -383,8 +585,6 @@ public class EarthquakeEarlyWarningService {
         Spare2_4((mt43try_7_32 & 0x00003c00) >>> 10);
         */
 
-        Vn_6((mt43try_7_32 & 0x000003f0) >>> 4);
-        // mt43try_8_32 not Use.
 
         System.out.println("## input ##");
         System.out.printf("%08x",mt43try_1_32);
@@ -414,6 +614,22 @@ public class EarthquakeEarlyWarningService {
         System.out.printf("\"%s\":\"%b\",\n","Issue",Issue);
         System.out.printf("\"%s\":\"%b\",\n","Cancellation",Cancellation);
 
+        System.out.printf("\"%s\":\"%02d\",\n","WarningCode1",WarningCode1);
+        System.out.printf("\"%s\":\"%05d\",\n","MarineForecastRegion1",WarningCode1);
+        System.out.printf("\"%s\":\"%02d\",\n","WarningCode2",WarningCode2);
+        System.out.printf("\"%s\":\"%05d\",\n","MarineForecastRegion2",WarningCode2);
+        System.out.printf("\"%s\":\"%02d\",\n","WarningCode3",WarningCode3);
+        System.out.printf("\"%s\":\"%05d\",\n","MarineForecastRegion3",WarningCode3);
+        System.out.printf("\"%s\":\"%02d\",\n","WarningCode4",WarningCode4);
+        System.out.printf("\"%s\":\"%05d\",\n","MarineForecastRegion4",WarningCode4);
+        System.out.printf("\"%s\":\"%02d\",\n","WarningCode5",WarningCode5);
+        System.out.printf("\"%s\":\"%05d\",\n","MarineForecastRegion5",WarningCode5);
+        System.out.printf("\"%s\":\"%02d\",\n","WarningCode6",WarningCode6);
+        System.out.printf("\"%s\":\"%05d\",\n","MarineForecastRegion6",WarningCode6);
+        System.out.printf("\"%s\":\"%02d\",\n","WarningCode7",WarningCode7);
+        System.out.printf("\"%s\":\"%05d\",\n","MarineForecastRegion7",WarningCode7);
+        System.out.printf("\"%s\":\"%02d\",\n","WarningCode8",WarningCode8);
+        System.out.printf("\"%s\":\"%05d\",\n","MarineForecastRegion8",WarningCode8);
         /*
         System.out.printf("\"%s\":\"%03d\",\n","Information1",Information1);
         System.out.printf("\"%s\":\"%03d\",\n","Information2",Information2);
